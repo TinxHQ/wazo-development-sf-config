@@ -1,0 +1,36 @@
+#!/bin/sh -ex
+
+apt-get update
+
+apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+
+apt-get update
+
+apt-get install -y docker-ce docker-ce-cli containerd.io
+
+systemctl enable docker
+
+DOCKER_COMPOSE_VERSION='v2.2.3'
+curl -SL https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# No service running in chroot
+# systemctl start docker
+# docker version
+
+docker-compose version
+
+# Script must run after zuul-worker & wazo-debug users creation, hence named 60-
+usermod -a -G docker wazo-debug
+usermod -a -G docker zuul-worker

@@ -4,7 +4,7 @@ resources:
   tenants:
     local:
       description: "The local tenant."
-      url: "https://sf.development.wazo.cloud/manage"
+      url: "https://sfdev.development.wazo.cloud/manage"
       default-connection: github.com
       tenant-options:
         zuul/report-build-page: True
@@ -14,7 +14,7 @@ resources:
     github.com:
       base-url: "https://github.com"
       type: github
-      github-app-name: wazo-development-sf
+      github-app-name: wazo-development-sfdev
       github-label: mergeit
     opendev.org:
       base-url: "https://opendev.org"

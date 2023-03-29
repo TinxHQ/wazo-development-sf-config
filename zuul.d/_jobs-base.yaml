@@ -11,7 +11,7 @@
     nodeset:
       nodes: []
     vars:
-      zuul_web_url: "https://sf.development.wazo.cloud/zuul"
+      zuul_web_url: "https://sfdev.development.wazo.cloud/zuul"
     description: |
       This job wait for the queue ahead to be empty.
 

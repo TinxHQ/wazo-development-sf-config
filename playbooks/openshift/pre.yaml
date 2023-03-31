@@ -21,7 +21,7 @@
 
         - import_role: name=log-inventory
       vars:
-        zuul_log_url: "https://sfdev.development.wazo.cloud/logs"
+        zuul_log_url: "https://sftest.development.wazo.cloud/logs"
 
     - name: Set oc_command fact
       set_fact:

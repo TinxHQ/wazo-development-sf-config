@@ -7,6 +7,7 @@ diskimages:
     elements:
       # Those and others live in /usr/lib/python3.6/site-packages/diskimage_builder/elements, see their README.rst for details
       #  - pip-cache # TODO test if that speedup our jobs
+      - debootstrap
       - debian
       # Those live in /usr/share/sf-elements
       - nodepool-minimal
@@ -17,7 +18,7 @@ diskimages:
 
 labels:
   - name: vm-debian-10-m1s
-    min-ready: 0
+    min-ready: 1
   - name: vm-debian-10-m2s
     min-ready: 0
   - name: vm-debian-10-m1m

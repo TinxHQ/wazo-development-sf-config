@@ -19,7 +19,7 @@
     nodeset:
       nodes:
         - name: pod-debian-10
-          label: pod-centos-7
+          label: pod-debian-10
 
 - semaphore:
     name: semaphore-config-update
@@ -37,8 +37,8 @@
     secrets:
       - service_user
     vars:
-      zuul_log_url: "https://sftest.development.wazo.cloud/logs"
-      gateway_url: "https://sftest.development.wazo.cloud"
+      zuul_log_url: "https://sf.development.wazo.cloud/logs"
+      gateway_url: "https://sf.development.wazo.cloud"
       tenant_config: False
     nodeset:
       nodes: []
@@ -91,7 +91,7 @@
     nodeset:
       nodes: []
     vars:
-      zuul_web_url: "https://sftest.development.wazo.cloud/zuul"
+      zuul_web_url: "https://sf.development.wazo.cloud/zuul"
     description: |
       This job wait for the queue ahead to be empty.
 

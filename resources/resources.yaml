@@ -12,14 +12,4 @@ resources:
         - admin@sf.development.wazo.cloud
     config-core:
       description: Team core for the config repo
-      members:
-        - dev+wazo-development-sf@wazo.io
-  projects:
-    test:
-      tenant: local
-      description: "Testing Zuul itself"
-      connection: github.com
-      source-repositories:
-        - TinxHQ/wazo-development-sf-jobs: {}
-        - TinxHQ/zuul-test-job:
-            zuul/exclude-unprotected-branches: false
+      members: []

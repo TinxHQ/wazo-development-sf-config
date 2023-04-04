@@ -5,7 +5,7 @@
     source:
       github.com:
         config-projects:
-        - TinxHQ/wazo-devleopment-sf-config: {}
+        - TinxHQ/wazo-development-sf-config: {}
         untrusted-projects:
         - TinxHQ/wazo-development-sf-jobs: {}
         - TinxHQ/zuul-test-job:

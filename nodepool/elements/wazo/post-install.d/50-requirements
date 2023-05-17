@@ -2,6 +2,7 @@
 
 apt-get update
 
+# python3-apt is required for bindep in tox ansible job
 apt-get install -y \
     ansible \
     cron \
@@ -12,8 +13,10 @@ apt-get install -y \
     lintian \
     lsof \
     make \
+    python3-apt \
     python3-dev \
     python3-pip \
+    python3-venv \
     sed \
     tar \
     unzip
@@ -21,7 +24,7 @@ apt-get install -y \
 pip3 install tox
 
 # tox --> virtual --> importlib_metadata (latest)
-# Latest version (>5.0.0) is incompatible with kombu used in development (4.6.11)
+# Latest version (>5.0.0) is incompatible with kombu used in production (4.6.11)
 # Since this host is use to execute wazo-ansible playbooks (i.e. install a
 # wazo), we should use same version than debian to avoid conflict.
 # However, since latest tox version is only compatible with

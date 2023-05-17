@@ -15,4 +15,5 @@
         - zuul/zuul-jobs:
             include:
             - job
-            shadow: TinxHQ/wazo-development-sf-jobs
+            #shadow: TinxHQ/wazo-development-sf-jobs
+            shadow: TinxHQ/wazo-production-sf-jobs

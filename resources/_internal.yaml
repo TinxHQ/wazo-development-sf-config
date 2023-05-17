@@ -27,7 +27,7 @@ resources:
       source-repositories:
         - TinxHQ/wazo-development-sf-config:
             zuul/config-project: True
-        - TinxHQ/wazo-development-sf-jobs
+        - TinxHQ/wazo-production-sf-jobs
         - zuul/zuul-jobs:
             connection: opendev.org
             zuul/include: [job]

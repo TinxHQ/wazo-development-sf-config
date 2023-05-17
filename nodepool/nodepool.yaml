@@ -20,9 +20,9 @@ labels:
   - name: vm-debian-10-m1s
     min-ready: 1
   - name: vm-debian-10-m2s
-    min-ready: 0
+    min-ready: 1
   - name: vm-debian-10-m1m
-    min-ready: 0
+    min-ready: 1
 
 providers:
   - name: openstack2

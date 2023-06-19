@@ -55,7 +55,7 @@ providers:
       - name: os-pool-m1s-bullseye
         max-servers: 5
         networks:
-          - wazo-production-sf-net
+          - wazo-development-sf-net
         labels:
           - name: vm-debian-11-m1s
             flavor-name: wazo-sf-worker-small
@@ -65,7 +65,7 @@ providers:
       - name: os-pool-m1s
         max-servers: 5
         networks:
-          - wazo-production-sf-net
+          - wazo-development-sf-net
         labels:
           - name: vm-debian-10-m1s
             flavor-name: wazo-sf-worker-small
@@ -75,7 +75,7 @@ providers:
       - name: os-pool-m2s
         max-servers: 5
         networks:
-          - wazo-production-sf-net
+          - wazo-development-sf-net
         labels:
           - name: vm-debian-10-m2s
             flavor-name: m2.small
@@ -85,7 +85,7 @@ providers:
       - name: os-pool-m1m-bullseye
         max-servers: 5
         networks:
-          - wazo-production-sf-net
+          - wazo-development-sf-net
         labels:
           - name: vm-debian-11-m1m
             flavor-name: m1.medium
@@ -95,7 +95,7 @@ providers:
       - name: os-pool-m1m
         max-servers: 5
         networks:
-          - wazo-production-sf-net
+          - wazo-development-sf-net
         labels:
           - name: vm-debian-10-m1m
             flavor-name: m1.medium

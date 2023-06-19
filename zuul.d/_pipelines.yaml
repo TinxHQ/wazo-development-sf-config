@@ -43,6 +43,7 @@
     manager: dependent
     precedence: high
     post-review: True
+    supercedes: check
     require:
       github.com:
         review:
@@ -51,7 +52,6 @@
             type: approved
         # Require label
         label: mergeit
-        status: "(?i)^wazo-development-sf.*:local/check:success$"
         open: True
         current-patchset: True
     trigger:

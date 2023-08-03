@@ -18,8 +18,8 @@
       - site_sflogs
     nodeset:
       nodes:
-        - name: pod-debian-10
-          label: pod-centos-7
+        - name: pod-debian-11
+          label: pod-debian-11
 
 - semaphore:
     name: semaphore-config-update

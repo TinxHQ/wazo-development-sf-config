@@ -43,7 +43,8 @@ labels:
 providers:
   - name: openstack2
     cloud: openstack2
-    clean-floating-ips: true
+    clean-floating-ips: false
+    port-cleanup-interval: 120
     image-name-format: "{image_name}-{timestamp}"
     boot-timeout: 120
     rate: 10.0

@@ -10,6 +10,8 @@ resources:
       description: Team lead for the config repo
       members:
         - admin@sf.development.wazo.cloud
+        - infra+wazo-development-sf@wazo.io
     config-core:
       description: Team core for the config repo
-      members: []
+      members:
+        - dev+wazo-development-sf@wazo.io

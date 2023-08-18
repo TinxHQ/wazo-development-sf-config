@@ -15,3 +15,10 @@ resources:
       description: Team core for the config repo
       members:
         - dev+wazo-development-sf@wazo.io
+  projects:
+    test:
+      description: "Testing Zuul itself"
+      connection: github.com
+      source-repositories:
+        - TinxHQ/zuul-test-job:
+            zuul/exclude-unprotected-branches: false

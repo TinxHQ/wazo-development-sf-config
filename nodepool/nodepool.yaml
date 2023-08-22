@@ -20,7 +20,7 @@ diskimages:
     # https://zuul-ci.org/docs/nodepool/configuration.html#attr-diskimages.elements
     elements:
       - debian
-      - debootstrap      
+      - debootstrap
       # Those live in /usr/share/sf-elements
       - nodepool-minimal
       - zuul-worker-user

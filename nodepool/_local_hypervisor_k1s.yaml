@@ -1,1 +1,12 @@
 # This file is managed by sfconfig, do not edit manually
+
+providers:
+  - name: managed-k1s-provider-i-0806ec24bd850187f
+    driver: openshiftpods
+    context: /k1s-i-0806ec24bd850187f/managed
+    max-pods: 10
+    pools:
+    - name: main
+      # Use extra-labels to configure labels
+      labels: []
+

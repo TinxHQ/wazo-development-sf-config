@@ -10,15 +10,6 @@ resources:
       description: Team lead for the config repo
       members:
         - admin@sf.development.wazo.cloud
-        - infra+wazo-development-sf@wazo.io
     config-core:
       description: Team core for the config repo
-      members:
-        - dev+wazo-development-sf@wazo.io
-  projects:
-    test:
-      description: "Testing Zuul itself"
-      connection: github.com
-      source-repositories:
-        - TinxHQ/zuul-test-job:
-            zuul/exclude-unprotected-branches: false
+      members: []

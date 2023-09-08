@@ -10,3 +10,12 @@ providers:
       # Use extra-labels to configure labels
       labels: []
 
+  - name: managed-k1s-provider-i-0a2e989ef9cb67a7b
+    driver: openshiftpods
+    context: /k1s-i-0a2e989ef9cb67a7b/managed
+    max-pods: 10
+    pools:
+    - name: main
+      # Use extra-labels to configure labels
+      labels: []
+

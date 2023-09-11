@@ -8,25 +8,25 @@ labels:
 
 
 extra-labels:
-  - provider: managed-k1s-provider-i-09bd0c6fd0ee7619c
+  - provider: managed-k1s-provider-i-0c9fb456ce610e8f8
     pool: main
     labels:
       - name: pod-debian-10
         image: localhost/k1s/debian-10
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-09bd0c6fd0ee7619c
+  - provider: managed-k1s-provider-i-0c9fb456ce610e8f8
     pool: main
     labels:
       - name: pod-debian-11
         image: localhost/k1s/debian-11
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-09bd0c6fd0ee7619c
+  - provider: managed-k1s-provider-i-0c9fb456ce610e8f8
     pool: main
     labels:
       - name: pod-node-12
         image: localhost/k1s/node-12
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-09bd0c6fd0ee7619c
+  - provider: managed-k1s-provider-i-0c9fb456ce610e8f8
     pool: main
     labels:
       - name: pod-python-310
@@ -35,25 +35,25 @@ extra-labels:
         # interpreter for Ansible so system packages function correctly
         python-path: /usr/bin/python3.9
   
-  - provider: managed-k1s-provider-i-0a2e989ef9cb67a7b
+  - provider: managed-k1s-provider-i-0cc50a471cbabdb10
     pool: main
     labels:
       - name: pod-debian-10
         image: localhost/k1s/debian-10
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-0a2e989ef9cb67a7b
+  - provider: managed-k1s-provider-i-0cc50a471cbabdb10
     pool: main
     labels:
       - name: pod-debian-11
         image: localhost/k1s/debian-11
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-0a2e989ef9cb67a7b
+  - provider: managed-k1s-provider-i-0cc50a471cbabdb10
     pool: main
     labels:
       - name: pod-node-12
         image: localhost/k1s/node-12
         python-path: /usr/bin/python3
-  - provider: managed-k1s-provider-i-0a2e989ef9cb67a7b
+  - provider: managed-k1s-provider-i-0cc50a471cbabdb10
     pool: main
     labels:
       - name: pod-python-310

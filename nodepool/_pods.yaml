@@ -3,3 +3,17 @@
 labels:
   - name: pod-centos-7
 
+extra-labels:
+  - provider: managed-k1s-provider-i-04aba1eef5fa5e70d
+    pool: main
+    labels:
+      - name: pod-centos-7
+        image: localhost/k1s/centos-7
+        python-path: /bin/python2
+  - provider: managed-k1s-provider-i-0e16e2b8796508f83
+    pool: main
+    labels:
+      - name: pod-centos-7
+        image: localhost/k1s/centos-7
+        python-path: /bin/python2
+

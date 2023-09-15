@@ -7,7 +7,6 @@ diskimages:
     elements:
       # Those and others live in /usr/lib/python3.6/site-packages/diskimage_builder/elements, see their README.rst for details
       #  - pip-cache # TODO test if that speedup our jobs
-      - debootstrap
       - debian
       # Those live in /usr/share/sf-elements
       - nodepool-minimal
@@ -20,7 +19,6 @@ diskimages:
     # https://zuul-ci.org/docs/nodepool/configuration.html#attr-diskimages.elements
     elements:
       - debian
-      - debootstrap
       # Those live in /usr/share/sf-elements
       - nodepool-minimal
       - zuul-worker-user
@@ -43,8 +41,7 @@ labels:
 providers:
   - name: openstack2
     cloud: openstack2
-    clean-floating-ips: false
-    port-cleanup-interval: 120
+    clean-floating-ips: true
     image-name-format: "{image_name}-{timestamp}"
     boot-timeout: 120
     rate: 10.0

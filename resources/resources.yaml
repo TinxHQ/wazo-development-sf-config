@@ -9,7 +9,7 @@ resources:
     config-ptl:
       description: Team lead for the config repo
       members:
-        - admin@sf.development.wazo.cloud
+        - admin@zuul.dev.wazo.io
     config-core:
       description: Team core for the config repo
       members: []

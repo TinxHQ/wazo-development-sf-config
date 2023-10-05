@@ -10,18 +10,25 @@ labels:
 extra-labels:
   - provider: managed-k1s-provider-i-07e772fe2abb33943
     pool: main
-    max-servers: 2
-    max-pods: 2
     labels:
       - name: pod-debian-10
         image: localhost/k1s/debian-10
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-07e772fe2abb33943
+    pool: main
+    labels:
       - name: pod-debian-11
         image: localhost/k1s/debian-11
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-07e772fe2abb33943
+    pool: main
+    labels:
       - name: pod-node-12
         image: localhost/k1s/node-12
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-07e772fe2abb33943
+    pool: main
+    labels:
       - name: pod-python-310
         image: localhost/k1s/python-310
         # Despite this being a Python 3.10 image we need to use the system's
@@ -30,18 +37,25 @@ extra-labels:
   
   - provider: managed-k1s-provider-i-0eec0b963a430b33d
     pool: main
-    max-servers: 2
-    max-pods: 2
     labels:
       - name: pod-debian-10
         image: localhost/k1s/debian-10
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-0eec0b963a430b33d
+    pool: main
+    labels:
       - name: pod-debian-11
         image: localhost/k1s/debian-11
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-0eec0b963a430b33d
+    pool: main
+    labels:
       - name: pod-node-12
         image: localhost/k1s/node-12
         python-path: /usr/bin/python3
+  - provider: managed-k1s-provider-i-0eec0b963a430b33d
+    pool: main
+    labels:
       - name: pod-python-310
         image: localhost/k1s/python-310
         # Despite this being a Python 3.10 image we need to use the system's

@@ -62,16 +62,16 @@
     start:
       github.com:
         status: 'pending'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/status/change/{change.number},{change.patchset}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/status/change/{change.number},{change.patchset}"
         comment: false
     success:
       github.com:
         status: 'success'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
     failure:
       github.com:
         status: 'failure'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
 
 - pipeline:
     name: wazo-gate
@@ -120,18 +120,18 @@
     start:
       github.com:
         status: 'pending'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/status/change/{change.number},{change.patchset}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/status/change/{change.number},{change.patchset}"
         comment: false
     success:
       github.com:
         status: 'success'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
         merge: true
         comment: true
     failure:
       github.com:
         status: 'failure'
-        status-url: "https://zuul.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
+        status-url: "https://sf.dev.wazo.io/zuul/t/local/buildset/{buildset.uuid}"
         comment: true
     window-floor: 20
     window-increase-factor: 2

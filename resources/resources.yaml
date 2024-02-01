@@ -13,3 +13,11 @@ resources:
     config-core:
       description: Team core for the config repo
       members: []
+  projects:
+    wazo-platform:
+      description: "Wazo Platform"
+      connection: github.com
+      source-repositories:  projects:
+        - wazo-platform/wazo-provd-plugins:
+            zuul/exclude-unprotected-branches: true
+            zuul/exclude-branches: ['python2']

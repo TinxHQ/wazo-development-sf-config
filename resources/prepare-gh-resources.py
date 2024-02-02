@@ -73,7 +73,9 @@ def main():
 
             if repo.full_name in IGNORED_BRANCHES:
                 branches = IGNORED_BRANCHES[repo.full_name]
-                f.write(f"            zuul/exclude-branches: {branches}\n")
+                f.write("            zuul/exclude-branches:\n")
+                for branch in branches:
+                    f.write(f"              - {branch}\n")
 
         if args.doit:
             if repo.full_name in ZUUL_PROJECTS:

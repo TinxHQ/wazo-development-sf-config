@@ -20,3 +20,4 @@ resources:
       source-repositories:  projects:
         - wazo-platform/wazo-provd-plugins:
             zuul/exclude-unprotected-branches: true
+            zuul/exclude-branches: [python2]

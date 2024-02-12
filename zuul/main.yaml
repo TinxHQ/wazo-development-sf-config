@@ -9,7 +9,7 @@
         untrusted-projects:
         - TinxHQ/wazo-development-sf-jobs: {}
         - TinxHQ/zuul-test-job:
-            exclude-unprotected-branches: false
+            exclude-unprotected-branches: true
       opendev.org:
         untrusted-projects:
         - zuul/zuul-jobs:

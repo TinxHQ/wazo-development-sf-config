@@ -30,7 +30,7 @@ resources:
       source-repositories:
 """
 
-IGNORED_BRANCHES = {"wazo-platform/wazo-provd-plugins": ["python2"]}
+IGNORED_BRANCHES = {"TinxHQ/zuul-test-job": ["test-protected-branch-exclusion"]}
 ZUUL_PROJECTS = ["TinxHQ/wazo-development-sf-config", "TinxHQ/wazo-development-sf-jobs"]
 
 

@@ -19,4 +19,5 @@ resources:
       connection: github.com
       source-repositories:
         - TinxHQ/zuul-test-job:
-            exclude-unprotected-branches: true
+            zuul/exclude-unprotected-branches: true
+            zuul/exclude-branches: ["test-protected-branch-exclusion"]

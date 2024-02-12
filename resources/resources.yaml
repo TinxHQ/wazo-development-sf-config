@@ -17,7 +17,7 @@ resources:
     wazo-platform:
       description: "Wazo Platform"
       connection: github.com
-      source-repositories:  projects:
-        - wazo-platform/wazo-provd-plugins:
+      source-repositories:
+        - TinxHQ/zuul-test-job:
             zuul/exclude-unprotected-branches: true
             zuul/exclude-branches: ['python2']

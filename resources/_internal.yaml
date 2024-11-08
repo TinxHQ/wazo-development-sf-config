@@ -14,7 +14,7 @@ resources:
     github.com:
       base-url: "https://github.com"
       type: github
-      github-app-name: wazo-community-zuul
+      github-app-name: wazo-development-sf
       github-label: mergeit
     opendev.org:
       base-url: "https://opendev.org"
